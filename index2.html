@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dormeal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="snap-y snap-mandatory">
+    <div class="block lg:hidden">
+      <nav class="bg-gray-950 flex items-center justify-center px-5 gap-x-0 py-4">
+        <img src="/d.png" alt="logo" class="w-8 fade-up" />
+        <div class="text-white text-4xl font-bold fade-down">ormeal</div>
+      </nav>
+
+      <div class="px-5 mt-36 mb-24 flex flex-col items-center justify-center right-text">
+        <div id="toast2" class="toast hidden">
+          <div class="bg-green-600 p-5 w-full rounded-2xl flex mb-5 text-white gap-x-4 items-center font-light">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+            <p>You have successfully subscribed to our waiting list. Thank you!</p>
+          </div>
+        </div>
+
+        <div class="text-4xl mb-5 font-bold text-center right-text fade-in">GET READY TO DOWNLOAD</div>
+        <input id="email2" type="email" placeholder="Enter your email" class="w-full p-4 text-center font-thin placeholder:text-gray-950 mt-4 rounded-xl border-2 border-gray-600 focus:border-blue-600 focus:border-2 focus:outline-none transition-all ease-in-out" />
+
+        <button id="joinWaitlist2" class="w-full p-4 text-center font-thin mt-4 rounded-xl bg-gray-950 text-slate-50 border-2 border-gray-800 hover:bg-gray-900 transition-all ease-in-out">Join Waitlist</button>
+      </div>
+    </div>
+    <section class="hidden lg:block">
+      <section id="header" class="grid grid-cols-12 h-screen snap-always snap-center">
+        <div class="col-span-6 bg-gray-950 flex items-center justify-center">
+          <img src="/logo.png" alt="logo" class="w-96 fade-up" />
+        </div>
+        <div class="col-span-6 bg-slate-50 flex flex-col items-center justify-center right-text">
+          <div id="toast" class="toast hidden">
+            <div class="bg-green-600 p-5 w-full rounded-2xl flex mb-5 text-white gap-x-4 items-center font-light">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+              <p>You have successfully subscribed to our waiting list. Thank you!</p>
+            </div>
+          </div>
+          <div class="text-6xl font-bold text-center mb-5 right-text fade-in">GET READY TO DOWNLOAD</div>
+          <input id="email1" type="email" placeholder="Enter your email" class="w-96 p-4 text-center font-thin placeholder:text-gray-950 mt-4 rounded-xl border-2 border-gray-600 focus:border-blue-600 focus:border-2 focus:outline-none transition-all ease-in-out" />
+
+          <button id="joinWaitlist1" class="w-96 p-4 text-center font-thin mt-4 rounded-xl bg-gray-950 text-slate-50 border-2 border-gray-800 hover:bg-gray-900 transition-all ease-in-out">Join Waitlist</button>
+        </div>
+      </section>
+    </section>
+    <section id="about" class="container mx-auto h-screen snap-always snap-center flex flex-col lg:flex-row items-center lg:justify-between">
+      <div class="sm:w-2/4">
+        <img src="/hero.png" width="400" class="hidden sm:block floating" />
+        <img src="/hero.png" width="300" class="sm:hidden floating" />
+      </div>
+      <div class="sm:w-2/4 flex flex-col gap-y-3">
+        <div class="text-4xl text-center my-5 sm:text-6xl font-bold uppercase mb-3">About Us</div>
+        <div class="mx-4 sm:mx-0 font-light">The occupational traffic permit is one of the most important things in the company when carrying out freight transport. In fact, it is a prerequisite for doing business traffic at all.</div>
+        <div class="mx-4 sm:mx-0 font-light">The occupational traffic permit is one of the most important things in the company when carrying out freight transport. In fact, it is a prerequisite for doing business traffic at all.</div>
+      </div>
+    </section>
+    <section id="faq" class="snap-always snap-center">
+      <div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
+        <div class="flex flex-col items-center">
+          <h2 class="font-bold text-4xl sm:text-6xl mt-5 tracking-tight">FAQ</h2>
+          <p class="text-neutral-500 text-xl mt-3">Frequenty asked questions</p>
+        </div>
+        <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+          <!-- Question Starts -->
+          <div class="py-5">
+            <details class="group">
+              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                <span> Example Question 1</span>
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">This is an example answer, if you have more questions, just copy paste this block of code.</p>
+            </details>
+          </div>
+          <!-- Question Ends -->
+          <!-- Question Starts -->
+          <div class="py-5">
+            <details class="group">
+              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                <span> Example Question 2</span>
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">This is an example answer, if you have more questions, just copy paste this block of code.</p>
+            </details>
+          </div>
+          <!-- Question Ends -->
+          <!-- Question Starts -->
+          <div class="py-5">
+            <details class="group">
+              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                <span> Example Question 3</span>
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">This is an example answer, if you have more questions, just copy paste this block of code.</p>
+            </details>
+          </div>
+          <!-- Question Ends -->
+          <!-- Question Starts -->
+          <div class="py-5">
+            <details class="group">
+              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                <span> Example Question 4</span>
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">This is an example answer, if you have more questions, just copy paste this block of code.</p>
+            </details>
+          </div>
+          <!-- Question Ends -->
+          <!-- Question Starts -->
+          <div class="py-5">
+            <details class="group">
+              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                <span> Example Question 5</span>
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">This is an example answer, if you have more questions, just copy paste this block of code.</p>
+            </details>
+          </div>
+          <!-- Question Ends -->
+          <!-- Question Starts -->
+          <div class="py-5">
+            <details class="group">
+              <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                <span> Example Question 6</span>
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">This is an example answer, if you have more questions, just copy paste this block of code.</p>
+            </details>
+          </div>
+          <!-- Question Ends -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-950 text-white py-5 mt-5">
+      <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between">
+        <img src="/logo.png" alt="logo" class="w-24 fade-up" />
+
+        <div class="flex gap-x-5 mt-5 sm:mt-0">All rights reserved</div>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+      import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyC8cLIKsKjuB6BEvGNa6qJJXh3gR9nyuRM",
+
+        authDomain: "dormeal-f9344.firebaseapp.com",
+
+        projectId: "dormeal-f9344",
+
+        storageBucket: "dormeal-f9344.appspot.com",
+
+        messagingSenderId: "554597963475",
+
+        appId: "1:554597963475:web:b055361c61587a2e332626",
+
+        measurementId: "G-Y0JE1BEQ1S",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      function logger(email) {
+        const db = getDatabase();
+        const emailsRef = ref(db, "emails");
+        push(emailsRef, {
+          email: email,
+        });
+      }
+
+      document.getElementById("joinWaitlist1").addEventListener("click", function () {
+        const email = document.getElementById("email1").value;
+        const toastId = "toast";
+        if (!email) {
+          alert("Please enter your email");
+        } else {
+          document.getElementById(toastId).classList.remove("hidden");
+          console.log(email);
+          logger(email);
+          // Trigger confetti animation
+          confetti();
+        }
+      });
+
+      document.getElementById("joinWaitlist2").addEventListener("click", function () {
+        const email = document.getElementById("email2").value;
+        const toastId = "toast2";
+        if (!email) {
+          alert("Please enter your email");
+        } else {
+          document.getElementById(toastId).classList.remove("hidden");
+          console.log(email);
+          logger(email);
+          // Trigger confetti animation
+          confetti();
+        }
+      });
+    </script>
+  </body>
+</html>
